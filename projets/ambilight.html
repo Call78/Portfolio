@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Ambilight - Portfolio Sharan RAMANE</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <main>
+        <section class="project-section">
+            <h1>Projet Ambilight DIY</h1>
+
+            <h2>Présentation du Projet</h2>
+            <p>
+                Dans le cadre de mes projets personnels en BTS CIEL, j'ai conçu et réalisé un système d'éclairage biaisé dynamique (communément appelé "Ambilight") pour mon moniteur principal EIZO de 24 pouces.
+            </p>
+            <p>
+                L'objectif était de créer une solution <strong>open-source et économique</strong> capable d'analyser l'image affichée à l'écran en temps réel et de projeter les couleurs correspondantes sur le mur arrière.
+            </p>
+            <p>
+                Ce système améliore l'immersion dans les jeux et les films, tout en réduisant la fatigue visuelle en diminuant le contraste entre la dalle lumineuse et l'environnement sombre.
+            </p>
+
+            <figure>
+                <img src="image_1.png" alt="Rendu final du système Ambilight">
+                <figcaption>Figure 1 : Rendu final du projet en conditions réelles.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Architecture Technique et Matériel</h2>
+            <p>
+                Contrairement aux solutions commerciales "clés en main", ce projet repose sur une architecture IoT (Internet of Things) utilisant un microcontrôleur Wi-Fi pour piloter des LEDs adressables individuellement.
+            </p>
+
+            <h3>Liste des Équipements (Hardware)</h3>
+            <div class="hardware-list">
+                <ul>
+                    <li><strong>Contrôleur :</strong> Wemos D1 Mini (ESP8266) pour sa connectivité Wi-Fi et sa gestion du protocole UDP.</li>
+                    <li><strong>Éclairage :</strong> Ruban LED WS2812B (60 LEDs/mètre).
+                        <br><em>Configuration : 94 LEDs au total (30 haut/bas, 17 côtés).</em>
+                    </li>
+                    <li><strong>Alimentation :</strong> Bloc externe 5V 4A, dimensionné pour la charge maximale.</li>
+                    <li><strong>Câblage :</strong> Fils 20AWG pour éviter les chutes de tension.</li>
+                </ul>
+            </div>
+
+            <h3>Stack Logicielle (Software)</h3>
+            <div class="software-list">
+                <ul>
+                    <li><strong>Firmware (Embarqué) :</strong> WLED flashé sur le Wemos D1 Mini.</li>
+                    <li><strong>Capture (PC) :</strong> Logiciel Prismatik (Windows) pour l'analyse d'image et l'envoi des paquets de données.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Réalisation et Mise en Place</h2>
+
+            <h3>1. Le Défi de l'Alimentation (Sécurité)</h3>
+        <section>
+            <div class="container-bouton">
+                <button class="bouton style" type="button">
+                    <a href="../index.html">Retourner à la page principale</a>
+                </button>
+            </div>
+        </section>
+            <footer>
+        <p>&copy; 2026 Mon Portfolio BTS CIEL - Tous droits réservés</p>
+        <div class="social-links">
+        </footer>
+</body>
+</html>
+            

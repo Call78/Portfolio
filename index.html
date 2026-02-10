@@ -7,15 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    
     <main>
-        <section id="accueil">
+        <section>
+            <div class="accueil">
             <h1>Bienvenue sur mon portfolio</h1>
             <p>Sharan RAMANE - Élève en BTS CIEL (Cybersécurité, Informatique et réseaux, Électronique) option Informatique et Réseaux</p>
         </section>
@@ -29,19 +23,37 @@
         
         <section id="projets">
             <h2>Mes projets</h2>
-            <p>Zone de texte pour décrire vos projets réalisés pendant votre formation BTS CIEL.</p>
+            <div class="container-bouton">
+                <button class="bouton style" type="button">
+                    <a href="projets/ambilight.html">Projet Ambilight</a>
+                </button>
+                <br>
+                <button class="bouton style" type="button">
+                    <a href="projets/streamdeck.html">Projet StreamDeck</a>
+                </button>
+            </div>
         </section>
         
         <section id="contact">
-            <h2>Contact</h2>
-            <p>Zone de texte avec vos informations de contact et liens vers vos réseaux professionnels.</p>
-        </section>
+    <h2>Contact</h2>
+    <p>Vous voulez me contacter ? N'hésitez pas à me joindre via les liens ci-dessous :</p>
+    
+    <div class="contact-links">
+        <p>
+            <strong>Email :</strong> 
+            <a href="mailto:sharan.ramane78@email.com">sharan.ramane78@gmail.com</a>
+        </p>
+        
+        <p>
+            <strong>LinkedIn :</strong> 
+            <a href="https://www.linkedin.com/in/sharan-ramane/" target="_blank" rel="noopener">linkedin.com/in/sharan-ramane</a>
+        </p>
+    </div>
+</section>
     </main>
     
     <footer>
         <p>&copy; 2026 Mon Portfolio BTS CIEL - Tous droits réservés</p>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/sharan-ramane/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn" width="20" height="24"></a>
-    </footer>
+        </footer>
 </body>
 </html>
